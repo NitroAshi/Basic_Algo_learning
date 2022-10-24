@@ -6,21 +6,19 @@ int main()
 {
     int num;
     vector<int> v;
-    cout << "unsorted array:" << endl;
-    while ((cin >> num) && num != cinTerminator) {
+
+    cout << "Unsorted array:" << endl;
+    while(cin >> num) {
         v.push_back(num);
+        if(cin.get() == '\n') {
+            break;
+        }
     }
 
-    cout << "Elements into vector: " << endl;
-    // print vector
+    cout << "Sorted array:" << endl;
     for(int i : v) {
         cout << i << " ";
     }
     cout << endl;
     return 0;
-    // vector<int> v = { 5, 4, 3, 2, 1 };
-    // SortAlgo sa;
-    // sa.BubbleSort(v);
-    // sa.Print(v);
-    // return 0;
 }
