@@ -6,13 +6,15 @@ using namespace std;
 class SortAlgo
 {
 public:
-    SortAlgo();
-    ~SortAlgo();
-    void BubbleSort(vector<int> &v);
-    void InsertionSort(vector<int> &v);
-    void SelectionSort(vector<int> &v);
-    void MergeSort(vector<int> &v);
-    void QuickSort(vector<int> &v);
-    void HeapSort(vector<int> &v);
-    void Print(vector<int> &v);
+    SortAlgo(vector<int> &v);
+    vector<int> BubbleSort();
+    void InsertionSort();
+    void SelectionSort();
+    void MergeSort();
+    void QuickSort();
+    void HeapSort();
+    void Print();
+
+private:
+    vector<int> arr;
 };

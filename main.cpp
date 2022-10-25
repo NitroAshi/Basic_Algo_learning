@@ -1,6 +1,5 @@
 #include "SortAlgo.h"
 
-const char cinTerminator = '\n';
 
 int main()
 {
@@ -14,6 +13,8 @@ int main()
             break;
         }
     }
+    SortAlgo tmp(v);
+    v = tmp.BubbleSort();
 
     cout << "Sorted array:" << endl;
     for(int i : v) {
