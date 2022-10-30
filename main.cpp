@@ -1,5 +1,8 @@
-#include "SortAlgo.h"
+#include "BaseSort.h"
+#include "BubbleSort.h"
+#include "handleSort.h"
 
+using namespace std;
 
 int main()
 {
@@ -13,11 +16,12 @@ int main()
             break;
         }
     }
-    SortAlgo tmp(v);
-    v = tmp.BubbleSort();
+
+    BubbleSort bubble(v);
+    vector<int> sorted = handleSort(&bubble);
 
     cout << "Sorted array:" << endl;
-    for(int i : v) {
+    for(int i : sorted) {
         cout << i << " ";
     }
     cout << endl;

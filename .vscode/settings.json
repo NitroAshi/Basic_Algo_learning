@@ -1,6 +1,11 @@
 {
     "files.associations": {
+        "*.py": "python",
+        "*.ipynb": "jupyter",
+        "*.in": "ini",
         "*.cgi": "tcl",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "vector": "cpp",
+        "iosfwd": "cpp"
     }
 }
