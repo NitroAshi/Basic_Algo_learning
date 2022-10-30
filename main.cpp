@@ -18,10 +18,10 @@ int main()
     }
 
     BubbleSort bubble(v);
-    vector<int> sorted = handleSort(&bubble);
+    vector<int> res = handleSort(&bubble);
 
     cout << "Sorted array:" << endl;
-    for(int i : sorted) {
+    for(int i : res) {
         cout << i << " ";
     }
     cout << endl;
