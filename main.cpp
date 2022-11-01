@@ -1,8 +1,9 @@
 #include "BaseSort.h"
+#include "handleSort.h"
 #include "BubbleSort.h"
 #include "SelectionSort.h"
 #include "InsertionSort.h"
-#include "handleSort.h"
+#include "QuickSort.h"
 
 using namespace std;
 
@@ -19,7 +20,7 @@ int main()
         }
     }
 
-    BubbleSort bubble(input_v);
+    QuickSort bubble(input_v);
     vector<int> res = handleSort(&bubble);
 
     cout << "Sorted array:" << endl;
