@@ -4,6 +4,8 @@
 #include "SelectionSort.h"
 #include "InsertionSort.h"
 #include "QuickSort.h"
+#include "MergeSort.h"
+#include "HeapSort.h"
 
 using namespace std;
 
@@ -20,7 +22,7 @@ int main()
         }
     }
 
-    QuickSort bubble(input_v);
+    HeapSort bubble(input_v);
     vector<int> res = handleSort(&bubble);
 
     cout << "Sorted array:" << endl;

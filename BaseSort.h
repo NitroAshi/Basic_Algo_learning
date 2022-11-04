@@ -12,7 +12,7 @@ class BaseSort
 public:
     BaseSort(vector<int> &v);
     virtual void _sort() = 0;
-    vector<int> _getData();
+    vector<int> _getData() const;
 
 protected:
     vector<int> _arr;
