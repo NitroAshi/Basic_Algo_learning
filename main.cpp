@@ -22,8 +22,8 @@ int main()
         }
     }
 
-    HeapSort bubble(input_v);
-    vector<int> res = handleSort(&bubble);
+    HeapSort sort_sub(input_v);
+    vector<int> res = handleSort(&sort_sub);
 
     cout << "Sorted array:" << endl;
     for(int i : res) {
