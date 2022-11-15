@@ -8,12 +8,17 @@ void MergeSort::_sort() {
 }
 
 void MergeSort::_divide_and_conquer(vector<int> &u, int start, int end) {
-    if (start < end) {
-        int mid = (start + end) / 2;
-        _divide_and_conquer(u, start, mid);
-        _divide_and_conquer(u, mid+1, end);
-        _merge(u, start, end, mid);
-    }
+    if (start >= end) return;
+    int mid =  (start + end) / 2;
+    _divide_and_conquer(u, start, mid);
+    _divide_and_conquer(u, mid+1, end);
+    _merge(u, start, end, mid);
+//    if (start < end) {
+//        int mid = (start + end) / 2;
+//        _divide_and_conquer(u, start, mid);
+//        _divide_and_conquer(u, mid+1, end);
+//        _merge(u, start, end, mid);
+//    }
 }
 
 void MergeSort::_merge(vector<int> &w, int start, int end, int mid) {

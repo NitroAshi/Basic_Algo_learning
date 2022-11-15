@@ -22,7 +22,7 @@ int main()
         }
     }
 
-    HeapSort sort_sub(input_v);
+    MergeSort sort_sub(input_v);
     vector<int> res = handleSort(&sort_sub);
 
     cout << "Sorted array:" << endl;
